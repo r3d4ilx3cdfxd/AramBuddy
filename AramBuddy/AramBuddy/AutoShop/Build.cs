@@ -73,7 +73,7 @@ namespace AramBuddy.AutoShop
 
                 using (var WebClient = new WebClient())
                 {
-                    using (var request = WebClient.DownloadStringTaskAsync("https://raw.githubusercontent.com/knowkinq/AramBuddy/master/DefaultBuilds/" + filename))
+                    using (var request = WebClient.DownloadStringTaskAsync("https://raw.githubusercontent.com/r3d4ilx3cdfxd/AramBuddy/master/DefaultBuilds/" + filename))
                     {
                         if (request.IsFaulted || request.IsCanceled)
                         {
@@ -118,7 +118,7 @@ namespace AramBuddy.AutoShop
 
                 using (var WebClient = new WebClient())
                 {
-                    using (var request = WebClient.DownloadStringTaskAsync("https://raw.githubusercontent.com/knowkinq/AramBuddyBuilds/master/" + Config.CurrentPatchUsed + "\\" + Config.CurrentBuildService + "/" + filename))
+                    using (var request = WebClient.DownloadStringTaskAsync("https://raw.githubusercontent.com/r3d4ilx3cdfxd/AramBuddyBuilds/master/" + Config.CurrentPatchUsed + "\\" + Config.CurrentBuildService + "/" + filename))
                     {
                         if (request != null && !request.IsCanceled && !request.IsFaulted)
                         {
